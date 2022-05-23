@@ -1,0 +1,99 @@
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+/* цвет фона #FFFFFF */
+/* цвет заливки секции #2F303A
+            #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  color: #000000;
+}
+
+.logo-first-part {
+  color: var(--accent-color);
+}
+
+/* меню навигации */
+
+.menu-nav .link {
+  color: var(--title-text-color);
+}
+
+.menu-nav .link:hover,
+.menu-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* контакты */
+
+.contact .contact-link {
+  color: var(--primary-text-color);
+}
+
+.contact .contact-link:hover,
+.contact .contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* секция шапка */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: #ffffff;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* секции */
+
+.section-title,
+.team-title {
+  color: var(--title-text-color);
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+/* подвал */
+
+footer {
+  background-color: #2f303a;
+}
+
+.logo-second-part {
+  color: #ffffff;
+}
+
+address {
+  color: #ffffff;
+}
+
+footer .contact-link {
+  color: rgba(255, 255, 255, 0.6);
+}
