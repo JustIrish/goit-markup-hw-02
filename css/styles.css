@@ -1,6 +1,7 @@
 /* основной цвет текста #212121 */
 /* вторичный цвет текста #757575 */
 /* акцент #2196F3 */
+/* цвет активной кнопки #188CE8 */
 /* цвет фона #FFFFFF */
 /* цвет заливки секции #2F303A
             #F5F4FA */
@@ -20,16 +21,18 @@ body {
   list-style: none;
 }
 
-a {
+.link,
+.contact-link,
+.logo {
   text-decoration: none;
 }
 
 .logo {
-  color: #000000;
+  color: var(--accent-color);
 }
 
-.logo-first-part {
-  color: var(--accent-color);
+.logo-header {
+  color: #000000;
 }
 
 /* меню навигации */
@@ -43,14 +46,18 @@ a {
   color: var(--accent-color);
 }
 
+.menu-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* контакты */
 
 .contact .contact-link {
   color: var(--primary-text-color);
 }
 
-.contact .contact-link:hover,
-.contact .contact-link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -69,6 +76,11 @@ a {
   color: #ffffff;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
+}
+
 /* секции */
 
 .section-title,
@@ -82,18 +94,18 @@ a {
 
 /* подвал */
 
-footer {
+.footer {
   background-color: #2f303a;
 }
 
-.logo-second-part {
+.logo-footer {
   color: #ffffff;
 }
 
-address {
+.location {
   color: #ffffff;
 }
 
-footer .contact-link {
+.link-footer {
   color: rgba(255, 255, 255, 0.6);
 }
