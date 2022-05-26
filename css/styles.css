@@ -9,6 +9,7 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --second-text-color: #ffffff;
   --accent-color: #2196f3;
   --main-backgr-color: #ffffff;
   --special-backgr-color: #2f303a;
@@ -34,7 +35,20 @@ button {
   list-style: none;
 }
 
-/* header */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*----------------------header---------------------- */
 
 .logo {
   color: var(--accent-color);
@@ -78,14 +92,14 @@ button {
   text-decoration: none;
 }
 
-/* секция шапка */
+/* ----------------------секция шапка---------------------- */
 
 .hero {
   background-color: var(--special-backgr-color);
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--second-text-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -96,7 +110,7 @@ button {
 }
 
 .hero-btn {
-  color: #ffffff;
+  color: var(--second-text-color);
   background-color: var(--accent-color);
 
   font-weight: 700;
@@ -110,12 +124,11 @@ button {
   background-color: #188ce8;
 }
 
-/* секции */
+/* ----------------------секции---------------------- */
 
 .benefits-title {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -125,7 +138,6 @@ button {
 .team-title {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -148,7 +160,7 @@ button {
   line-height: 1.19;
 }
 
-/* портфолио */
+/* ----------------------портфолио---------------------- */
 
 .filter-btn {
   color: var(--title-text-color);
@@ -162,11 +174,11 @@ button {
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: #ffffff;
+  color: var(--second-text-color);
   background-color: var(--accent-color);
 }
 
-/* подвал */
+/* ----------------------подвал---------------------- */
 
 .footer {
   background-color: var(--special-backgr-color);
@@ -174,7 +186,7 @@ button {
 
 .logo-footer,
 .location {
-  color: #ffffff;
+  color: var(--second-text-color);
 }
 
 .footer-contacts,
