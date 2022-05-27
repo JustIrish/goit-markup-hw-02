@@ -22,13 +22,7 @@ body {
 
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
 }
 
 .list {
@@ -48,7 +42,7 @@ button {
   margin: -1px;
 }
 
-/*----------------------header---------------------- */
+/*------------------ВЕРХНЯЯ ЛИНИЯ----------------- */
 
 .logo {
   color: var(--accent-color);
@@ -92,7 +86,7 @@ button {
   text-decoration: none;
 }
 
-/* ----------------------секция шапка---------------------- */
+/* --------------------СЕКЦИЯ ШАПКА---------------------- */
 
 .hero {
   background-color: var(--special-backgr-color);
@@ -112,7 +106,9 @@ button {
 .hero-btn {
   color: var(--second-text-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -124,7 +120,7 @@ button {
   background-color: #188ce8;
 }
 
-/* ----------------------секции---------------------- */
+/* -------------------СЕКЦИИ------------------ */
 
 .benefits-title {
   color: var(--title-text-color);
@@ -134,17 +130,25 @@ button {
   text-transform: uppercase;
 }
 
+.benefits-text {
+  line-height: 1.71;
+}
+
 .work-title,
 .team-title {
   color: var(--title-text-color);
 
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.16;
   text-align: center;
 }
 
 .team {
   background-color: var(--portfolio-backgr-color);
+}
+
+.team-card {
+  background-color: var(--main-backgr-color);
 }
 
 .team-name {
@@ -160,12 +164,14 @@ button {
   line-height: 1.19;
 }
 
-/* ----------------------портфолио---------------------- */
+/* ---------------------ПОРТФОЛИО--------------------- */
 
 .filter-btn {
   color: var(--title-text-color);
   background-color: var(--portfolio-backgr-color);
+  cursor: pointer;
 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -178,7 +184,7 @@ button {
   background-color: var(--accent-color);
 }
 
-/* ----------------------подвал---------------------- */
+/* -------------------ПОДВАЛ------------------- */
 
 .footer {
   background-color: var(--special-backgr-color);
@@ -192,7 +198,7 @@ button {
 .footer-contacts,
 .location {
   font-style: normal;
-  font-weight: 400;
+  line-height: 1.71;
 }
 
 .footer-link {
